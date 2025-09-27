@@ -408,16 +408,46 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach(img => imageObserver.observe(img));
 
     // ======================
+    // BUTTON EVENT HANDLERS
+    // ======================
+    // Contact Sales buttons
+    const contactButtons = document.querySelectorAll('.btn-outline');
+    contactButtons.forEach(btn => {
+        if (btn.textContent.includes('Contact Sales') || btn.textContent.includes('Talk to us')) {
+            btn.addEventListener('click', () => {
+                showNotification('Contact sales feature coming soon!', 'info');
+            });
+        }
+    });
+
+    // Sign Up buttons
+    const signupButtons = document.querySelectorAll('.btn-primary');
+    signupButtons.forEach(btn => {
+        if (btn.textContent.includes('Sign Up') || btn.textContent.includes('Try it now')) {
+            btn.addEventListener('click', () => {
+                showNotification('Sign up feature coming soon!', 'info');
+            });
+        }
+    });
+
+    // Learn More buttons
+    const learnMoreButtons = document.querySelectorAll('.btn-outline');
+    learnMoreButtons.forEach(btn => {
+        if (btn.textContent.includes('Learn more')) {
+            btn.addEventListener('click', () => {
+                showNotification('More information coming soon!', 'info');
+            });
+        }
+    });
+
+    // ======================
     // INITIALIZATION COMPLETE
     // ======================
     console.log('OrbitStack website initialized successfully!');
-});
 
-// ======================
-// ADDITIONAL STYLES FOR MOBILE MENU
-// ======================
-const additionalStyles = `
-    <style>
+    // Add mobile menu styles
+    const mobileMenuStyles = document.createElement('style');
+    mobileMenuStyles.textContent = `
         @media (max-width: 768px) {
             .nav-menu.active {
                 display: flex;
@@ -457,28 +487,7 @@ const additionalStyles = `
             .mobile-menu-toggle.active span:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px);
             }
-            
-            .notification-content {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 1rem;
-            }
-            
-            .notification-close {
-                background: none;
-                border: none;
-                color: currentColor;
-                cursor: pointer;
-                opacity: 0.7;
-                transition: opacity 0.2s ease;
-            }
-            
-            .notification-close:hover {
-                opacity: 1;
-            }
         }
-    </style>
-`;
-
-document.head.insertAdjacentHTML('beforeend', additionalStyles);
+    `;
+    document.head.appendChild(mobileMenuStyles);
+});
