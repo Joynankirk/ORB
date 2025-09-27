@@ -429,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
-
+    
     // Learn More buttons
     const learnMoreButtons = document.querySelectorAll('.btn-outline');
     learnMoreButtons.forEach(btn => {
