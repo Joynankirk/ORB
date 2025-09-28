@@ -1,5 +1,3 @@
-/* Photo Grid Styles - Add this to your existing style.css */
-
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
