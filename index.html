@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OrbitStack - Cloud Infrastructure</title>
-  <meta name="description" content="OrbitStack — bring the power of development to your entire team. Visual development, design-to-code, and enterprise-grade publishing." />
+  <meta name="description" content="OrbitStack — bring the power of development to your entire team. Visual development, design-to-code, and enterprise-grade publishing.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="min-h-screen bg-black text-white font-poppins">
@@ -42,7 +42,7 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu (hidden by default) -->
+  <!-- Mobile Menu -->
   <div id="mobileMenu" class="mobile-menu md:hidden hidden">
     <a href="#platform" class="block text-sm py-2">Platform</a>
     <a href="#resources" class="block text-sm py-2">Resources</a>
@@ -70,7 +70,7 @@
 
       <div class="max-w-3xl mx-auto mt-6">
         <div class="search-pill relative bg-white-5 border border-gray-700 rounded-full p-4 mb-4 flex items-center gap-4">
-          <input id="fusionInput" type="text" class="flex-1 bg-transparent text-sm input-ghost" placeholder="Ask Fusion to build a full featured, production-ready SaaS" aria-label="Fusion prompt" />
+          <input id="fusionInput" type="text" class="flex-1 bg-transparent text-sm input-ghost" placeholder="Ask Fusion to build a full featured, production-ready SaaS" aria-label="Fusion prompt">
           <div class="flex gap-2">
             <button class="p-2 bg-white-10 rounded border border-gray-700 hover:bg-white-20 btn-icon" aria-label="Attach image">🖼</button>
             <button id="fusionRun" class="p-2 bg-white-10 rounded border border-gray-700 hover:bg-white-20 btn-icon" aria-label="Send prompt">➤</button>
@@ -93,7 +93,6 @@
       <p class="text-sm text-gray-400 mb-8">Trusted by teams at</p>
       <div class="logo-marquee">
         <div class="marquee-track" id="marquee">
-          <!-- duplicate set for continuous scroll -->
           <div class="marquee-set">
             <div class="logo">Zapier</div>
             <div class="logo">Lyft</div>
@@ -123,7 +122,7 @@
   <section class="py-24 px-4">
     <div class="max-w-4xl mx-auto text-center">
       <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-500-10 rounded-full mb-6">
-        <div class="icon-large">{"</>"}</div>
+        <div class="icon-large">{""}</div>
       </div>
       <h2 class="subtle-label text-blue-400 tracking-wider mb-4">VISUAL DEVELOPMENT PLATFORM</h2>
       <h3 class="section-title">Bring the power of development to your entire team</h3>
@@ -142,15 +141,15 @@
         <h3 class="feature-title">Use your existing code</h3>
         <div class="space-y-4">
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Connect to any code repository</span>
           </div>
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Leverage your design systems, components, and APIs</span>
           </div>
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Generated code uses your components and matches your coding standards</span>
           </div>
         </div>
@@ -159,21 +158,21 @@
   </section>
 
   <!-- Features - Figma Designs -->
-  <section class="py-16 px-4">
+  <section id="resources" class="py-16 px-4">
     <div class="max-w-6xl mx-auto grid two-col gap-12 items-center">
       <div class="order-2 md:order-1">
         <h3 class="feature-title">Bring in your Figma designs</h3>
         <div class="space-y-4">
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Copy/paste any Figma design</span>
           </div>
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Generated code leverages your tokens and components</span>
           </div>
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Prompt with your backend context to make designs interactive</span>
           </div>
         </div>
@@ -186,7 +185,7 @@
   </section>
 
   <!-- Features - Visual Editing -->
-  <section class="py-16 px-4">
+  <section id="docs" class="py-16 px-4">
     <div class="max-w-6xl mx-auto grid two-col gap-12 items-center">
       <div class="bg-gradient-to-br from-purple-900-20 to-black border border-gray-800 rounded-lg h-80 flex items-center justify-center">
         <div class="feature-icon">⚙️</div>
@@ -196,15 +195,15 @@
         <h3 class="feature-title">Visually edit anything</h3>
         <div class="space-y-4">
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Modify any generated experience</span>
           </div>
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Drag and drop your components</span>
           </div>
           <div class="flex gap-4">
-            <div class="check">✔</div>
+            <div class="check">✓</div>
             <span class="text-gray-300">Fine-tune the styling of any element with full precision control</span>
           </div>
         </div>
@@ -217,9 +216,81 @@
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-16">Integration points for any use case</h2>
       <div class="grid three-col gap-8">
-        <div class="integration-card"> <h3>Start from scratch</h3> <div class="placeholder-visual"></div> </div>
-        <div class="integration-card"> <h3>Connect to existing repos</h3> <div class="placeholder-visual"></div> </div>
-        <div class="integration-card"> <h3>Publish via API</h3> <div class="placeholder-visual"></div> </div>
+        <div class="integration-card">
+          <h3>Start from scratch</h3>
+          <div class="placeholder-visual"></div>
+        </div>
+        <div class="integration-card">
+          <h3>Connect to existing repos</h3>
+          <div class="placeholder-visual"></div>
+        </div>
+        <div class="integration-card">
+          <h3>Publish via API</h3>
+          <div class="placeholder-visual"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW: Photo Grid Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="photo-grid">
+        <!-- Row 1 -->
+        <div class="photo-item photo-large">
+          <div class="photo-content">
+            <div class="photo-overlay">
+              <span class="photo-tag">stay to go</span>
+            </div>
+            <div class="photo-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+          </div>
+        </div>
+        
+        <div class="photo-item photo-stack">
+          <div class="photo-content">
+            <div class="photo-image books-stack"></div>
+          </div>
+        </div>
+        
+        <div class="photo-item photo-medium">
+          <div class="photo-content">
+            <div class="photo-image" style="background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);"></div>
+          </div>
+        </div>
+        
+        <div class="photo-item photo-medium">
+          <div class="photo-content">
+            <div class="photo-image" style="background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);"></div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="photo-item photo-medium">
+          <div class="photo-content">
+            <div class="photo-image" style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);"></div>
+          </div>
+        </div>
+        
+        <div class="photo-item photo-stack">
+          <div class="photo-content">
+            <div class="photo-image books-stack-2"></div>
+          </div>
+        </div>
+        
+        <div class="photo-item photo-large">
+          <div class="photo-content">
+            <div class="photo-overlay">
+              <span class="photo-tag">web ui components</span>
+            </div>
+            <div class="photo-image" style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);"></div>
+          </div>
+        </div>
+        
+        <div class="photo-item photo-medium">
+          <div class="photo-content">
+            <div class="photo-image" style="background: linear-gradient(135deg, #607D8B 0%, #455A64 100%);"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -344,7 +415,7 @@
 
       <form id="newsletterForm" class="max-w-2xl mx-auto relative">
         <div class="flex items-center bg-white rounded-full p-1 newsletter-input">
-          <input id="emailInput" type="email" placeholder="Enter your email *" class="flex-1 px-6 py-2 bg-transparent text-black outline-none email-input" />
+          <input id="emailInput" type="email" placeholder="Enter your email *" class="flex-1 px-6 py-2 bg-transparent text-black outline-none email-input">
           <button id="newsletterSubmit" type="submit" class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center hover:bg-purple-600 transition">→</button>
         </div>
         <p id="newsletterMessage" class="text-xs text-gray-400 mt-4"></p>
@@ -412,5 +483,6 @@
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
