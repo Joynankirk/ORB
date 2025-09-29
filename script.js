@@ -1,5 +1,4 @@
-// Photo Grid Interactive Features - Add this to your existing script.js
-
+// Photo Grid Interactive Features
 // Photo Grid Functionality
 document.addEventListener('DOMContentLoaded', () => {
   initializePhotoGrid();
@@ -33,7 +32,11 @@ function initializePhotoGrid() {
       item.style.animationDelay = `${0.1 * index}s`;
     }
   });
-  
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Thank you for contacting us! We will get back to you soon.');
+  this.reset();
+});
   // Initialize intersection observer for photo grid
   observePhotoGrid();
 }
