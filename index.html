@@ -3,486 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OrbitStack - Cloud Infrastructure</title>
-  <meta name="description" content="OrbitStack — bring the power of development to your entire team. Visual development, design-to-code, and enterprise-grade publishing.">
-  <link rel="stylesheet" href="style.css">
+  <title>CoderConda Software Agency</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="min-h-screen bg-black text-white font-poppins">
-
-  <!-- Top Banner -->
-  <div id="topBanner" class="relative bg-black border-b border-gray-800 py-3 px-4 text-center banner">
-    <span class="text-sm font-semibold">9/18 | Validate feature ideas earlier with AI-driven prototypes</span>
-    <button id="closeBanner" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white btn-icon" aria-label="Close banner">✖</button>
-  </div>
-
-   <!-- Navigation -->
-  <nav id="navbar" class="sticky top-0 z-50 transition-all bg-black/95 backdrop-blur-lg border-b border-gray-800 navbar">
-    <div class="container mx-auto px-4 flex items-center justify-between h-16">
-      <div class="flex items-center gap-3">
-        <a href="./index.html" class="flex items-center gap-3">
-          <img src="assets/logo.png" alt="OrbitStack Logo" class="h-10 w-auto">
-          <span class="text-xl font-bold">OrbitStack</span>
-        </a>
-      </div>
-
-      <div class="hidden md:flex items-center gap-8 nav-links">
-        <a href="#platform" class="text-sm font-medium hover:text-purple-400 transition">Platform</a>
-        <a href="#resources" class="text-sm font-medium hover:text-purple-400 transition">Resources</a>
-        <a href="#docs" class="text-sm font-medium hover:text-purple-400 transition">Docs</a>
-        <a href="#enterprise" class="text-sm font-medium hover:text-purple-400 transition">Enterprise</a>
-        <a href="#pricing" class="text-sm font-medium hover:text-purple-400 transition">Pricing</a>
-      </div>
-
-      <div class="hidden md:flex items-center gap-3 nav-actions">
-        <button class="px-4 py-2 text-sm font-medium border border-gray-700 rounded hover:border-purple-400 transition">Contact Sales</button>
-        <button class="px-4 py-2 text-sm font-medium bg-purple-500 rounded hover:bg-purple-600 transition">Sign Up</button>
-      </div>
-
-      <button id="mobileMenuToggle" class="md:hidden btn-icon" aria-label="Toggle menu">☰</button>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo"><img src="images/logo.png" alt="CoderConda Logo"></a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="mobile-menu md:hidden hidden">
-    <a href="#platform" class="block text-sm py-2">Platform</a>
-    <a href="#resources" class="block text-sm py-2">Resources</a>
-    <a href="#docs" class="block text-sm py-2">Docs</a>
-    <a href="#enterprise" class="block text-sm py-2">Enterprise</a>
-    <a href="#pricing" class="block text-sm py-2">Pricing</a>
-    <div class="mt-4 flex gap-3">
-      <button class="flex-1 px-4 py-2 border border-gray-700 rounded">Contact Sales</button>
-      <button class="flex-1 px-4 py-2 bg-purple-500 rounded">Sign Up</button>
-    </div>
-  </div>
-
-  <!-- Hero -->
-  <section class="relative px-4 py-20 overflow-hidden hero">
-    <div class="absolute inset-0 bg-gradient-radial"></div>
-    <div class="absolute inset-0 radial-overlay"></div>
-
-    <div class="relative max-w-4xl mx-auto text-center">
-      <div class="inline-block mb-6 px-6 py-2 bg-purple-500-10 rounded-full border-purple-500-30">
-        <span class="text-sm font-medium text-purple-400 tracking-wider">INTRODUCING FUSION</span>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Empowering Digital Transformation</h1>
+        <p>Your trusted partner for innovative software solutions.</p>
+        <a href="#contact" class="btn-primary">Get Started</a>
       </div>
+      <div class="hero-image">
+        <img src="images/hero-placeholder.png" alt="Hero Illustration">
+      </div>
+    </div>
+  </section>
 
-      <h1 class="display-heading">What should we build?</h1>
-      <p class="lead text-gray-400">using your existing design & code context</p>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>CoderConda is a leading software agency providing top-notch web, mobile, and cloud solutions for businesses worldwide.</p>
+    </div>
+  </section>
 
-      <div class="max-w-3xl mx-auto mt-6">
-        <div class="search-pill relative bg-white-5 border border-gray-700 rounded-full p-4 mb-4 flex items-center gap-4">
-          <input id="fusionInput" type="text" class="flex-1 bg-transparent text-sm input-ghost" placeholder="Ask Fusion to build a full featured, production-ready SaaS" aria-label="Fusion prompt">
-          <div class="flex gap-2">
-            <button class="p-2 bg-white-10 rounded border border-gray-700 hover:bg-white-20 btn-icon" aria-label="Attach image">🖼</button>
-            <button id="fusionRun" class="p-2 bg-white-10 rounded border border-gray-700 hover:bg-white-20 btn-icon" aria-label="Send prompt">➤</button>
-          </div>
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-list">
+        <div class="service-card">
+          <img src="images/web-dev.png" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>Modern, scalable websites tailored to your business needs.</p>
         </div>
-
-        <div class="flex justify-center gap-2 flex-wrap tags">
-          <span class="tag pill-light">React</span>
-          <span class="tag pill-muted">TypeScript</span>
-          <span class="tag pill-muted">Tailwind</span>
-          <span class="tag pill-muted">Next.js</span>
+        <div class="service-card">
+          <img src="images/mobile-dev.png" alt="Mobile Development">
+          <h3>Mobile Apps</h3>
+          <p>High-performance mobile applications for iOS & Android.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/cloud.png" alt="Cloud Solutions">
+          <h3>Cloud Solutions</h3>
+          <p>Robust and secure cloud infrastructure for growth.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Trusted By Logos -->
-  <section class="py-12 border-y border-gray-800 overflow-hidden logos-section">
-    <div class="container mx-auto px-4 text-center">
-      <p class="text-sm text-gray-400 mb-8">Trusted by teams at</p>
-      <div class="logo-marquee">
-        <div class="marquee-track" id="marquee">
-          <div class="marquee-set">
-            <div class="logo">Zapier</div>
-            <div class="logo">Lyft</div>
-            <div class="logo">Harry's</div>
-            <div class="logo">Jasper</div>
-            <div class="logo">Figma</div>
-            <div class="logo">Notion</div>
-            <div class="logo">Stripe</div>
-            <div class="logo">Linear</div>
-          </div>
-          <div class="marquee-set" aria-hidden="true">
-            <div class="logo">Zapier</div>
-            <div class="logo">Lyft</div>
-            <div class="logo">Harry's</div>
-            <div class="logo">Jasper</div>
-            <div class="logo">Figma</div>
-            <div class="logo">Notion</div>
-            <div class="logo">Stripe</div>
-            <div class="logo">Linear</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Visual Development Platform -->
-  <section class="py-24 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-500-10 rounded-full mb-6">
-        <div class="icon-large">{""}</div>
-      </div>
-      <h2 class="subtle-label text-blue-400 tracking-wider mb-4">VISUAL DEVELOPMENT PLATFORM</h2>
-      <h3 class="section-title">Bring the power of development to your entire team</h3>
-      <p class="lead text-gray-400">Let both developers and non-developers leverage your existing tech investments to iterate and ship faster</p>
-    </div>
-  </section>
-
-  <!-- Features - Use Existing Code -->
-  <section id="platform" class="py-16 px-4">
-    <div class="max-w-6xl mx-auto grid two-col gap-12 items-center">
-      <div class="feature-hero bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg h-80 flex items-center justify-center">
-        <div class="feature-icon">{"{code}"}</div>
-      </div>
-
-      <div>
-        <h3 class="feature-title">Use your existing code</h3>
-        <div class="space-y-4">
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Connect to any code repository</span>
-          </div>
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Leverage your design systems, components, and APIs</span>
-          </div>
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Generated code uses your components and matches your coding standards</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features - Figma Designs -->
-  <section id="resources" class="py-16 px-4">
-    <div class="max-w-6xl mx-auto grid two-col gap-12 items-center">
-      <div class="order-2 md:order-1">
-        <h3 class="feature-title">Bring in your Figma designs</h3>
-        <div class="space-y-4">
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Copy/paste any Figma design</span>
-          </div>
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Generated code leverages your tokens and components</span>
-          </div>
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Prompt with your backend context to make designs interactive</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-gradient-to-br from-blue-900-20 to-black border border-gray-800 rounded-lg h-96 flex items-center justify-center order-1 md:order-2">
-        <div class="svg-placeholder">🔗</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features - Visual Editing -->
-  <section id="docs" class="py-16 px-4">
-    <div class="max-w-6xl mx-auto grid two-col gap-12 items-center">
-      <div class="bg-gradient-to-br from-purple-900-20 to-black border border-gray-800 rounded-lg h-80 flex items-center justify-center">
-        <div class="feature-icon">⚙️</div>
-      </div>
-
-      <div>
-        <h3 class="feature-title">Visually edit anything</h3>
-        <div class="space-y-4">
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Modify any generated experience</span>
-          </div>
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Drag and drop your components</span>
-          </div>
-          <div class="flex gap-4">
-            <div class="check">✓</div>
-            <span class="text-gray-300">Fine-tune the styling of any element with full precision control</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Integration Points -->
-  <section class="py-24 px-4">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-16">Integration points for any use case</h2>
-      <div class="grid three-col gap-8">
-        <div class="integration-card">
-          <h3>Start from scratch</h3>
-          <div class="placeholder-visual"></div>
-        </div>
-        <div class="integration-card">
-          <h3>Connect to existing repos</h3>
-          <div class="placeholder-visual"></div>
-        </div>
-        <div class="integration-card">
-          <h3>Publish via API</h3>
-          <div class="placeholder-visual"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEW: Photo Grid Section -->
-  <section class="py-16 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="photo-grid">
-        <!-- Row 1 -->
-        <div class="photo-item photo-large">
-          <div class="photo-content">
-            <div class="photo-overlay">
-              <span class="photo-tag">stay to go</span>
-            </div>
-            <div class="photo-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-          </div>
-        </div>
-        
-        <div class="photo-item photo-stack">
-          <div class="photo-content">
-            <div class="photo-image books-stack"></div>
-          </div>
-        </div>
-        
-        <div class="photo-item photo-medium">
-          <div class="photo-content">
-            <div class="photo-image" style="background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);"></div>
-          </div>
-        </div>
-        
-        <div class="photo-item photo-medium">
-          <div class="photo-content">
-            <div class="photo-image" style="background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);"></div>
-          </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="photo-item photo-medium">
-          <div class="photo-content">
-            <div class="photo-image" style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);"></div>
-          </div>
-        </div>
-        
-        <div class="photo-item photo-stack">
-          <div class="photo-content">
-            <div class="photo-image books-stack-2"></div>
-          </div>
-        </div>
-        
-        <div class="photo-item photo-large">
-          <div class="photo-content">
-            <div class="photo-overlay">
-              <span class="photo-tag">web ui components</span>
-            </div>
-            <div class="photo-image" style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);"></div>
-          </div>
-        </div>
-        
-        <div class="photo-item photo-medium">
-          <div class="photo-content">
-            <div class="photo-image" style="background: linear-gradient(135deg, #607D8B 0%, #455A64 100%);"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Enterprise -->
-  <section id="enterprise" class="py-24 px-4 border-t border-gray-800">
-    <div class="max-w-4xl mx-auto text-center mb-16">
-      <div class="text-sm font-medium text-blue-400 tracking-wider mb-4">ENTERPRISE</div>
-      <h2 class="text-4xl font-bold">Built for teams shipping at scale</h2>
-    </div>
-
-    <div class="max-w-5xl mx-auto grid two-col gap-12">
-      <div class="enterprise-item">
-        <div class="icon-box">👥</div>
-        <div>
-          <h3 class="text-lg font-medium text-blue-400 mb-2">Roles & permissions</h3>
-          <p class="text-gray-400">Leverage roles to control permissions and access for everyone on the team</p>
-        </div>
-      </div>
-
-      <div class="enterprise-item">
-        <div class="icon-box">⚙️</div>
-        <div>
-          <h3 class="text-lg font-medium text-blue-400 mb-2">Rules & Workflows</h3>
-          <p class="text-gray-400">Control the flow of how your team ships, or git-manage everything</p>
-        </div>
-      </div>
-
-      <div class="enterprise-item">
-        <div class="icon-box">🛡️</div>
-        <div>
-          <h3 class="text-lg font-medium text-blue-400 mb-2">No training on your data</h3>
-          <p class="text-gray-400">Keep your data private and separate from model training</p>
-        </div>
-      </div>
-
-      <div class="enterprise-item">
-        <div class="icon-box">🔒</div>
-        <div>
-          <h3 class="text-lg font-medium text-blue-400 mb-2">Enterprise security & privacy</h3>
-          <p class="text-gray-400">SOC 2 Type II compliant and designed with enterprise-grade security standards</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products -->
-  <section id="pricing" class="py-24 px-4">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-16 max-w-2xl mx-auto">Two products to go from idea to production faster</h2>
-
-      <div class="grid two-col gap-0 border border-gray-800 rounded-lg overflow-hidden products-grid">
-        <div class="product-left bg-black p-12 border-r border-gray-800">
-          <div class="text-xs font-medium text-gray-400 tracking-wider mb-2">CODE GENERATION</div>
-          <h3 class="text-4xl font-bold text-purple-400 mb-6">Fusion</h3>
-          <p class="text-gray-300 mb-8">Build apps and UIs from scratch, from Figma designs, or with any existing repo</p>
-
-          <div class="space-y-3 mb-8">
-            <div class="flex items-center gap-3"><div class="mini-icon">🌐</div><span class="text-gray-400">Web app development</span></div>
-            <div class="flex items-center gap-3"><div class="mini-icon">🎨</div><span class="text-gray-400">Design to code</span></div>
-            <div class="flex items-center gap-3"><div class="mini-icon">⚡</div><span class="text-gray-400">Prototypes</span></div>
-          </div>
-
-          <button class="px-6 py-2 border border-gray-600 rounded hover:border-purple-400 transition">Learn more</button>
-        </div>
-
-        <div class="product-right bg-black p-12">
-          <div class="text-xs font-medium text-gray-400 tracking-wider mb-2">PUBLISH VIA API</div>
-          <h3 class="text-4xl font-bold text-blue-400 mb-6">Publish</h3>
-          <p class="text-gray-300 mb-8">Create, optimize, and publish on-brand content and experiences to any site or app.</p>
-
-          <div class="space-y-3 mb-8">
-            <div class="flex items-center gap-3"><div class="mini-icon">🗄️</div><span class="text-gray-400">Headless CMS</span></div>
-            <div class="flex items-center gap-3"><div class="mini-icon">🧩</div><span class="text-gray-400">Page builder</span></div>
-            <div class="flex items-center gap-3"><div class="mini-icon">⚙️</div><span class="text-gray-400">Optimization</span></div>
-          </div>
-
-          <button class="px-6 py-2 border border-gray-600 rounded hover:border-blue-400 transition">Learn more</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-24 px-4 text-center">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-sm font-medium text-gray-400 tracking-wider mb-6">GET STARTED WITH ORBITSTACK</div>
-      <h2 class="text-4xl font-bold mb-12">Unleash efficiency from idea to production</h2>
-      <div class="flex gap-6 justify-center flex-wrap">
-        <button class="px-8 py-3 bg-white text-black font-medium rounded hover:bg-gray-200 transition">Try it now</button>
-        <button class="px-8 py-3 border border-gray-600 rounded hover:border-gray-400 transition">Talk to us</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter -->
-  <section class="py-24 px-4 border-t border-gray-800">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12">Get the latest from Orbitstack.com</h2>
-
-      <div class="flex gap-12 justify-center mb-8 flex-wrap newsletter-toggles">
-        <div class="flex items-start gap-4">
-          <button id="devToggle" class="toggle w-12 h-6 rounded-full relative purple-on" aria-pressed="true" aria-label="Toggle Dev Newsletter">
-            <div class="toggle-knob"></div>
-          </button>
-          <div class="text-left">
-            <h4 class="font-semibold text-sm mb-1">Dev Drop Newsletter</h4>
-            <p class="text-xs text-gray-400 max-w-xs">News, tips, and tricks from Builder, for frontend developers.</p>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-4">
-          <button id="productToggle" class="toggle w-12 h-6 rounded-full relative" aria-pressed="false" aria-label="Toggle Product Newsletter">
-            <div class="toggle-knob"></div>
-          </button>
-          <div class="text-left">
-            <h4 class="font-semibold text-sm mb-1">Product Newsletter</h4>
-            <p class="text-xs text-gray-400 max-w-xs">Latest features and updates on the Orbitstack.com platform</p>
-          </div>
-        </div>
-      </div>
-
-      <form id="newsletterForm" class="max-w-2xl mx-auto relative">
-        <div class="flex items-center bg-white rounded-full p-1 newsletter-input">
-          <input id="emailInput" type="email" placeholder="Enter your email *" class="flex-1 px-6 py-2 bg-transparent text-black outline-none email-input">
-          <button id="newsletterSubmit" type="submit" class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center hover:bg-purple-600 transition">→</button>
-        </div>
-        <p id="newsletterMessage" class="text-xs text-gray-400 mt-4"></p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="border-t border-gray-800 py-16 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12 footer-links">
-        <div>
-          <h4 class="text-purple-400 font-semibold text-sm mb-4 tracking-wider">PLATFORM</h4>
-          <ul class="space-y-2 text-sm text-gray-400">
-            <li><a href="#" class="hover:text-white">Fusion</a></li>
-            <li><a href="#" class="hover:text-white">Publish</a></li>
-            <li><a href="#" class="hover:text-white">Product Updates</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-purple-400 font-semibold text-sm mb-4 tracking-wider">USE CASES</h4>
-          <ul class="space-y-2 text-sm text-gray-400">
-            <li><a href="#" class="hover:text-white">Design to Code</a></li>
-            <li><a href="#" class="hover:text-white">Headless CMS</a></li>
-            <li><a href="#" class="hover:text-white">Web Apps</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-purple-400 font-semibold text-sm mb-4 tracking-wider">RESOURCES</h4>
-          <ul class="space-y-2 text-sm text-gray-400">
-            <li><a href="#" class="hover:text-white">Blog</a></li>
-            <li><a href="#" class="hover:text-white">Guides</a></li>
-            <li><a href="#" class="hover:text-white">Community</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-purple-400 font-semibold text-sm mb-4 tracking-wider">DEVELOPERS</h4>
-          <ul class="space-y-2 text-sm text-gray-400">
-            <li><a href="#" class="hover:text-white">Documentation</a></li>
-            <li><a href="#" class="hover:text-white">API Reference</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-purple-400 font-semibold text-sm mb-4 tracking-wider">COMPANY</h4>
-          <ul class="space-y-2 text-sm text-gray-400">
-            <li><a href="#" class="hover:text-white">About</a></li>
-            <li><a href="#" class="hover:text-white">Careers</a></li>
-            <li><a href="#" class="hover:text-white">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="border-t border-gray-800 pt-8 flex justify-between items-center flex-wrap gap-4">
-        <div class="flex gap-6 text-sm text-gray-400 flex-wrap">
-          <span>© 2025 Builder.io, Inc.</span>
-          <a href="#" class="hover:text-white">Privacy Policy</a>
-          <a href="#" class="hover:text-white">Terms</a>
-        </div>
-
-        <div class="brand-mark-footer w-12 h-12 rounded-full gradient-shadow">
-          <div class="inner-mark w-6 h-6 rounded bg-gradient-indigo"></div>
-        </div>
-      </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CoderConda. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
